@@ -1,9 +1,7 @@
 ---
-interface Props {
-  id: number;
-  name: string;
-  level: number;
-}
+import type { IHobbie } from "@types/interfaces";
+
+interface Props extends IHobbie {}
 
 const { id, name, level }: Props = Astro.props;
 ---

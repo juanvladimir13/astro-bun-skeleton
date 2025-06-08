@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Hobbies from "@components/Hobbies.astro";
+import Hobbie from "@components/Hobbie.astro";
 
 import account from "@content/account.yml";
 import { API_URL } from "astro:env/client";
+import type { IHobbie } from "@types/interfaces";
 ---
 
 <BaseLayout title="Ejemplo de codigo">
@@ -14,8 +15,8 @@ import { API_URL } from "astro:env/client";
     <h2 class="title">{account.fullname}</h2>
 
     {
-      account.hobbies.map((hobby: any) => (
-        <Hobbies id={hobby.id} name={hobby.name} level={hobby.level} />
+      account.hobbies.map((hobby: IHobbie) => (
+        <Hobbie id={hobby.id} name={hobby.name} level={hobby.level} />
       ))
     }
 
