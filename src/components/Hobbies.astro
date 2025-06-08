@@ -1,0 +1,35 @@
+---
+interface Props {
+  id: number;
+  name: string;
+  level: number;
+}
+
+const { id, name, level }: Props = Astro.props;
+---
+
+<div class="hobby">
+  <h3>{name}</h3>
+  <div class="level" id=`${id}`>
+    <span class="level-text">Level: {level}</span>
+    <span class="level-bar" style={`width: ${level * 10}%`}></span>
+  </div>
+</div>
+
+<style>
+  .hobby {
+    margin-bottom: 1rem;
+  }
+  .level {
+    display: flex;
+    align-items: center;
+  }
+  .level-text {
+    margin-right: 0.5rem;
+  }
+  .level-bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+</style>

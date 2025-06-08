@@ -1,33 +1,52 @@
-# Astro Starter Kit: Minimal
+# Astro Skeleton Starter Kit
 
-```sh
-bun create astro@latest -- --template minimal
-```
+## Guía de Instalación y Ejecución de un Proyecto con Bun 🚀
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+### 1. 📥 Descargar el Repositorio desde GitHub como ZIP
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Haz clic en el botón verde **"Code"**
+- Selecciona **"Download ZIP"**
+- Extrae el archivo ZIP en una carpeta de tu elección
+
+### 2. 🌐 Modificar datos del proyecto
+
+- Navega a la carpeta del proyecto descomprimido. Ejemplo: `cd Descargas/astro-bun-skeleton-main`
+- Modifica el archivo `package.json` con los datos de tu proyecto
+- Renombra la carpeta `astro-bun-skeleton-main` por el dato **name** asignado en `package.json` 
+- Crea una copia del archivo `.env.development` y renombra la copia con el nombre de `.env`
+
+### 3. 🧰 Instalar Dependencias
+
+- Abre la terminal
+- Navega a la carpeta del proyecto descomprimido
+- Ejecuta: `bun install`
+
+### 4. 🚀 Ejecutar el Proyecto
+
+- Ejecuta el comando: `bun run dev`
+
+### 5. 🌐 Abrir el Proyecto en el Navegador
+
+- Abre tu navegador preferido
+- Ve a la dirección: <a href="http://localhost:4321" target="_blank">http://localhost:4321</a>
+- Recomendado: Google Chrome para mejor compatibilidad
+
+---
+
+¡Listo! Ahora deberías tener el proyecto funcionando correctamente
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+| Folder                   | Description                                           |
+| :------------------------ | :----------------------------------------------- |
+| `src/assets`             | Archivo de imagenes, fuentes, etc. que seran optimizadas|
+| `src/components`             | Componentes de la pagina web |
+| `src/content`           | Archivos de contenido estructurado en formatos `*.json, *.ts, *.yml`          |
+| `src/layouts`         | Archivos con estructura basica para diferentes paginas del proyecto |
+| `src/pages`         | Archivos de paginas completas |
+| `src/scripts`         | Archivos de tipo `*.js * *.ts` necesarios para que funcione un un `page, layouts, etc.`|
+| `src/styles`         | Directorio principal que contiene archivos de tipo `*.css` para el proyecto |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -35,13 +54,7 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| `bun install`             | Instala las dependencias|
+| `bun dev`             | Inicia un servidor local en `localhost:4321`      |
+| `bun build`           | Construye la pagina web en la carpeta `./dist/`|
+| `bun preview`         | Obtiene una vista previa de su compilación local, antes de implementarla|

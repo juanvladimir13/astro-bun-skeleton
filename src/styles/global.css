@@ -1,0 +1,137 @@
+:root {
+  --green-50: #eefff1;
+  --green-100: #d7ffe1;
+  --green-200: #b2ffc5;
+  --green-300: #76ff99;
+  --green-400: #33f565;
+  --green-500: #09de40;
+  --green-600: #00b930;
+  /* primary */
+  --green-700: #05a02e;
+  --green-800: #0a7126;
+  --green-900: #0a5d22;
+  --green-950: #00340f;
+  --iron-50: #f7f7f7;
+  --iron-100: #ededed;
+  --iron-200: #dfdfdf;
+  /* secondary */
+  --iron-300: #cfcfcf;
+  --iron-400: #adadad;
+  --iron-500: #999999;
+  --iron-600: #888888;
+  --iron-700: #7b7b7b;
+  --iron-800: #676767;
+  --iron-900: #545454;
+  --iron-950: #363636;
+  --white: #FFFFFF;
+  --black: #000000;
+  --divider: #BDBDBD;
+
+  --text-32: 2rem;
+  --text-30: 1.875rem;
+  --text-28: 1.8rem;
+  --text-26: 1.625rem;
+  --text-25: 1.6rem;
+  --text-24: 1.5rem;
+  --text-22: 1.375rem;
+  --text-20: 1.3rem;
+  --text-18: 1.1rem;
+  --text-base: 1rem;
+  --text-14: 0.875rem;
+  --text-12: 0.8rem;
+  --text-10: 0.6rem;
+  --text-8: 0.5rem;
+  --text-6: 0.4rem;
+  --text-5: 0.3rem;
+
+  --gap-sm: 15px;
+  --gap-md: 20px;
+  --gap-lg: 40px;
+
+  --margin-sm: 15px;
+  --padding: 10px;
+
+  --margin-sm: 15px;
+  --padding-sm: 15px;
+
+  --margin-md: 15px;
+  --padding-md: 40px;
+
+  --margin-lg: 20px;
+  --padding-lg: 80px;
+
+  --margin-xl: 20px;
+  --padding-xl: 100px;
+
+  --width-md: 768px;
+  --width-lg: 992px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--green-600);
+}
+
+body {
+  padding: 0px 0px 20px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+label,
+span {
+  color: var(--green-950)
+}
+
+.title {
+  margin: 25px 0px 15px;
+  font-size: var(--text-20);
+  font-weight: 700;
+  text-align: center;
+  color: var(--iron-700);
+}
+
+.sub-title {
+  color: var(--green-900);
+  font-size: var(--text-17);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container-fluid {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0px var(--padding-sm);
+}
+
+@media screen and (min-width: 769px) {
+  .container-fluid {
+    padding: 3px var(--padding-md);
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container-fluid {
+    padding: 3px var(--padding-lg);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .container-fluid {
+    margin: 15px auto;
+    max-width: var(--width-md);
+    padding: 0px var(--padding-xl);
+  }
+}
