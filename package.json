@@ -19,9 +19,10 @@
     "frontend"
   ],
   "scripts": {
-    "dev": "astro dev --host",
+    "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview --host",
+    "preview": "astro preview",
+    "host": "astro preview --host",
     "astro": "astro"
   },
   "engines": {
