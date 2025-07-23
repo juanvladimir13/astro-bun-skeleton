@@ -57,4 +57,3 @@ All commands are run from the root of the project, from a terminal:
 | `bun install`             | Instala las dependencias|
 | `bun run dev`             | Inicia un servidor local en `localhost:4321`      |
 | `bun run build`           | Construye la pagina web en la carpeta `./dist/`|
-| `bun preview`         | Obtiene una vista previa de su compilación local, antes de implementarla|
