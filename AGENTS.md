@@ -18,3 +18,11 @@ Bun-only repo. Use `bun install` and `bun run <script>` (shorthand `bun dev` als
 ## Structure
 - `src/pages/` = file-based routes; `src/layouts/BaseLayout.astro` = shared shell (global CSS + `ClientRouter`); page JS in `src/scripts/` loaded via `<script src="...">`.
 - Strict TS (`astro/tsconfigs/strict`). `dist/` and `.astro/` are generated — never edit. Formatting: 2-space, LF, trim trailing whitespace, final newline.
+
+## Ignore rules (AI agents)
+Agents must never index, read, or edit:
+- Dependencies & lockfiles: `node_modules/`, `bun.lock`, `package-lock.json`, `yarn.lock`, `pnpm-lock.yaml`.
+- Build artifacts & cache: `dist/`, `.astro/`.
+- Secrets & environments: `.env`, `.env.production`, `.env.local`, `.env.*.local`, `*.pem`, `*.key`.
+- Editor & OS metadata: `.git/`, `.vscode/`, `.idea/`, `.DS_Store`, `Thumbs.db`.
+- Ignore files configured: [`.agentignore`](.agentignore), [`.cursorignore`](.cursorignore), [`.antigravityignore`](.antigravityignore).

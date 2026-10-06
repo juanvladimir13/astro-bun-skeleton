@@ -1,0 +1,38 @@
+# ==============================================================================
+# .cursorignore - Patrones de exclusión para Cursor y asistentes de IA
+# ==============================================================================
+
+# Dependencias
+node_modules/
+bun.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Compilación y caché
+dist/
+build/
+out/
+.astro/
+
+# Control de versiones
+.git/
+
+# Entorno y credenciales sensibles
+.env
+.env.production
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDEs y SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
